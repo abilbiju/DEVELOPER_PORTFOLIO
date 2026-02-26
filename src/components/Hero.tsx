@@ -35,7 +35,7 @@ const Hero = () => {
   return (
     <section className="section-padding min-h-[90vh] flex flex-col justify-end">
       <div className="max-w-5xl w-full relative">
-       <img src="/IMG_3234.heic"
+       <img src="/IMG_3234.jpg"
       alt="Profile photo of Abil Biju"
       className="h-32 w-32 md:h-60 md:w-60 rounded-full object-cover
              border border-border
