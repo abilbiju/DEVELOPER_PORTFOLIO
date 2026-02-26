@@ -40,7 +40,6 @@ const Hero = () => {
         <h1 className="heading-xl mb-8 animate-fade-in-up" style={{ animationDelay: "0.1s", opacity: 0 }}>
           Hi, I'm <span className="text-accent">{typedName}</span>
           <span className="typing-cursor" aria-hidden="true" /><br />
-          AI & ML enthusiast building intelligent systems.
         </h1>
         <p className="body-text max-w-xl mb-10 animate-fade-in-up" style={{ animationDelay: "0.2s", opacity: 0 }}>
           B.Tech Computer Science (Data Science) student passionate about Artificial Intelligence,
