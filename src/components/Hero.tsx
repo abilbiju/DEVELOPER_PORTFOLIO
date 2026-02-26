@@ -37,12 +37,12 @@ const Hero = () => {
       <div className="max-w-5xl w-full relative">
        <img src="/IMG_3234.jpg"
       alt="Profile photo of Abil Biju"
-      className="h-32 w-32 md:h-60 md:w-60 rounded-full object-cover
+      className="hidden md:block h-32 w-32 md:h-60 md:w-60 rounded-full object-cover
              border border-border
              grayscale contrast-110 brightness-95
              opacity-75
              animate-fade-in-up
-             md:absolute md:right-10 md:top-[5%] md:-translate-y-1/2
+             md:absolute md:right-10 md:top-[5%] md:-translate-y-1/2 
              transition-all duration-300 hover:opacity-100 hover:grayscale-0"
       style={{ animationDelay: "0.05s", opacity: 0 }}
 />
