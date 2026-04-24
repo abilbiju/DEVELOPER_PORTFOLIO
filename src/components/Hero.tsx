@@ -33,7 +33,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="section-padding min-h-[90vh] flex flex-col justify-end">
+    <section id="home" aria-label="Introduction" className="section-padding min-h-[90vh] flex flex-col justify-end">
       <div className="max-w-5xl w-full relative">
        <img src="/IMG_3234.jpg"
       alt="Profile photo of Abil Biju"
@@ -68,7 +68,8 @@ const Hero = () => {
             <a
               href="https://abilbiju.netlify.app/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer external"
+              aria-label="View previous portfolio in a new tab"
               className="link-underline text-sm font-medium text-muted-foreground"
             >
               View previous portfolio →

@@ -37,6 +37,9 @@ const Projects = () => {
           <a
             key={i}
             href={project.link}
+            target="_blank"
+            rel="noopener noreferrer external"
+            aria-label={`Open project: ${project.title} (GitHub)`}
             className="group grid md:grid-cols-[1fr_2fr_auto] gap-4 md:gap-8 py-8 md:py-10 items-start hover:bg-secondary/50 -mx-4 px-4 transition-colors duration-300"
           >
             <div className="flex items-center gap-2">

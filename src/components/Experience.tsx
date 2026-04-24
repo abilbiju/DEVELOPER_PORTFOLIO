@@ -49,7 +49,7 @@ const Experience = () => {
 
       {/* Certifications */}
       <div className="mt-16">
-        <h2 className="heading-lg mb-16">Certifications</h2>
+        <h3 className="heading-lg mb-16">Certifications</h3>
         <div className="flex flex-wrap gap-3">
           {certifications.map((cert) => (
             <span key={cert} className="text-base border border-border px-3 py-2 text-grey">
@@ -71,7 +71,8 @@ const Experience = () => {
         <a
           href="https://abilbiju.netlify.app/"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer external"
+          aria-label="View previous portfolio in a new tab"
           className="link-underline text-sm font-medium text-muted-foreground"
         >
           View previous portfolio →

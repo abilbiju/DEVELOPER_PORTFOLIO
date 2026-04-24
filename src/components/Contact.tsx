@@ -24,8 +24,9 @@ const Contact = () => {
             <a
               key={social.name}
               href={social.href}
-              target="_blank"
-              rel="noopener noreferrer"
+              target={social.href.startsWith("http") ? "_blank" : undefined}
+              rel={social.href.startsWith("http") ? "noopener noreferrer external" : undefined}
+              aria-label={`Contact via ${social.name}`}
               className="group inline-flex items-center gap-2 border border-primary-foreground/20 px-5 py-3 text-sm font-medium hover:bg-primary-foreground hover:text-primary transition-colors duration-300"
             >
               <social.icon size={16} />
