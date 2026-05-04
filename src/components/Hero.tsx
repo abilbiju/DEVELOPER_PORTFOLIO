@@ -65,6 +65,9 @@ const Hero = () => {
             <a href="#projects" className="link-underline text-sm font-medium tracking-wide">
               View work
             </a>
+            <a href="/resume.pdf" className="link-underline text-sm font-medium tracking-wide">
+              View Resume
+            </a>
             <a
               href="https://abilbiju.netlify.app/"
               target="_blank"
