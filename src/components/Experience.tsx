@@ -1,5 +1,11 @@
 const experiences = [
   {
+    role: "Junior Artificial Intelligence Engineer Intern",
+    company: "AccelerateX",
+    period: "April 2026 - Present",
+    description: "Contributing to the planning, development, and deployment of AI-driven solutions. Gained hands-on experience in building, testing, and optimizing AI systems while collaborating with cross-functional teams to deliver projects efficiently",
+  },
+  {
     role: "Artificial Intelligence Intern",
     company: "KeyValue Software Systems",
     period: "June 2025",
