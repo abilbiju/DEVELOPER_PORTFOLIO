@@ -1,4 +1,26 @@
+import { useEffect, useState } from "react";
+
 const Navbar = () => {
+  const [isDark, setIsDark] = useState<boolean>(() => {
+    try {
+      return localStorage.getItem("theme") === "dark";
+    } catch (e) {
+      return false;
+    }
+  });
+
+  useEffect(() => {
+    try {
+      if (isDark) document.documentElement.classList.add("dark");
+      else document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+    } catch (e) {
+      // ignore
+    }
+  }, [isDark]);
+
+  const toggleTheme = () => setIsDark((v) => !v);
+
   return (
     <nav aria-label="Primary navigation" className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="flex items-center justify-between px-6 md:px-12 lg:px-24 h-14">
@@ -16,6 +38,15 @@ const Navbar = () => {
               {item}
             </a>
           ))}
+        </div>
+        <div className="flex items-center gap-3">
+          <button
+            onClick={toggleTheme}
+            aria-label={isDark ? "Switch to light theme" : "Switch to dark theme"}
+            className="rounded-md px-3 py-1 text-sm hover:bg-accent/10 transition-colors"
+          >
+            {isDark ? "☀️ Light" : "🌙 Dark"}
+          </button>
         </div>
       </div>
     </nav>

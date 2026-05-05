@@ -42,8 +42,8 @@ const Experience = () => {
         {experiences.map((exp, i) => (
           <div key={i} className="grid md:grid-cols-[1fr_2fr] gap-4 md:gap-12 py-8 md:py-10">
             <div>
-              <p className="font-mono text-xs text-muted-foreground mb-1">{exp.period}</p>
-              <p className="text-sm font-medium text-accent">{exp.company}</p>
+              <p className="font-mono text-sm md:text-base text-muted-foreground mb-1">{exp.period}</p>
+              <p className="text-base md:text-lg font-medium text-accent">{exp.company}</p>
             </div>
             <div>
               <h3 className="text-lg font-medium mb-2">{exp.role}</h3>

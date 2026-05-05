@@ -10,6 +10,7 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="theme-color" content="#0a0a0a" />
     <link rel="canonical" href="https://abilbiju.dev/" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Abil Biju | AI, ML & Cybersecurity Portfolio" />
@@ -22,6 +23,19 @@
     <meta name="twitter:title" content="Abil Biju | AI, ML & Cybersecurity Portfolio" />
     <meta name="twitter:description" content="Portfolio of Abil Biju featuring AI, machine learning, cybersecurity, and software development work." />
     <meta name="twitter:image" content="/IMG_3234.jpg" />
+
+    <script>
+      // Initialize theme early to avoid flash of incorrect theme
+      try {
+        const stored = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (stored === 'dark' || (!stored && prefersDark)) {
+          document.documentElement.classList.add('dark');
+        }
+      } catch (e) {
+        // ignore
+      }
+    </script>
 
   </head>
 

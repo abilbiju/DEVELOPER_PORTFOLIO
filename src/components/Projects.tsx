@@ -29,7 +29,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="section-padding">
+    <section id="projects" className="section-padding pt-12 md:pt-16">
       <p className="label-mono mb-4">Selected Work</p>
       <h2 className="heading-lg mb-16">Projects</h2>
       <div className="grid gap-0 divide-y divide-border">

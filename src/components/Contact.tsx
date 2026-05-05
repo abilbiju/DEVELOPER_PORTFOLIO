@@ -9,7 +9,7 @@ const socials = [
 
 const Contact = () => {
   return (
-    <section id="contact" className="section-padding bg-primary text-primary-foreground">
+    <section id="contact" className="px-6 md:px-12 lg:px-24 py-12 bg-card text-card-foreground">
       <div className="max-w-2xl">
         <p className="font-mono text-xs uppercase tracking-[0.2em] opacity-60 mb-4">Contact</p>
         <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-8">

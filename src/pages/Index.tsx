@@ -1,17 +1,33 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
+import WeightWaveText from "@/components/animation";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
+import Loader from "@/components/Loader";
 
 const Index = () => {
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
+    // Minimum loader time
+    const minTimer = setTimeout(() => setLoading(false), 2000);
+
+    // Also hide loader when window load fires (if later than min time)
+    const onLoad = () => {
+      clearTimeout(minTimer);
+      setLoading(false);
+    };
+
+    window.addEventListener("load", onLoad);
+
+    // Page metadata + structured data
     document.title = "Abil Biju | AI, ML & Cybersecurity Portfolio";
 
     const upsertMeta = (name: string, content: string) => {
-      let element = document.querySelector(`meta[name=\"${name}\"]`) as HTMLMetaElement | null;
+      let element = document.querySelector(`meta[name="${name}"]`) as HTMLMetaElement | null;
       if (!element) {
         element = document.createElement("meta");
         element.setAttribute("name", name);
@@ -46,23 +62,35 @@ const Index = () => {
       });
       document.head.appendChild(script);
     }
+
+    return () => {
+      clearTimeout(minTimer);
+      window.removeEventListener("load", onLoad);
+    };
   }, []);
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navbar />
-      <main id="main-content">
-        <Hero />
-        <Projects />
-        <Skills />
-        <Experience />
-        <Contact />
-      </main>
-      <footer className="px-6 md:px-12 lg:px-24 py-6 border-t border-border">
-        <p className="font-mono text-xs text-muted-foreground">
-          © {new Date().getFullYear()} — Designed & built with care by Abil Biju
-        </p>
-      </footer>
+    <div className="min-h-screen flex flex-col bg-background">
+      {loading ? (
+        <Loader />
+      ) : (
+        <>
+          <Navbar />
+          <main id="main-content" className="flex-grow">
+            <Hero />
+            <WeightWaveText />
+            <Projects />
+            <Skills />
+            <Experience />
+            <Contact />
+          </main>
+          <footer className="px-6 md:px-12 lg:px-24 py-6 border-t border-border">
+            <p className="font-mono text-xs text-muted-foreground">
+              © {new Date().getFullYear()} — Designed & built with care by Abil Biju
+            </p>
+          </footer>
+        </>
+      )}
     </div>
   );
 };
