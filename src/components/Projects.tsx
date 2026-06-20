@@ -5,7 +5,7 @@ const projects = [
     title: "BCI System for Multi-Objective Control with IoT Integration",
     description: "Developed an EEG-based Brain-Computer Interface (BCI) system that enables hands-free control of multiple IoT devices through real-time neural signal processing and classification.",
     tags: ["Brain Computing Interface","Deep Learning", "Signal Processing", "Python", "IoT"],
-    link: "#",
+    link: "#projects",
   },
   {
     title: "Live Event Detection System",
