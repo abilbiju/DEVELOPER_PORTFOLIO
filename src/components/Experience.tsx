@@ -1,8 +1,8 @@
 const experiences = [
   {
     role: "Graduate Engineer Trainee (Artificial Intelligence)",
-    company: "AccelerateX",
-    period: "April 2026 - May 2026",
+    company: "Transight",
+    period: "May 2026 - Present",
     description: "Contributing to the planning, development, and deployment of AI-driven solutions. Gained hands-on experience in building, testing, and optimizing AI systems while collaborating with cross-functional teams to deliver projects efficiently",
   },
   {
