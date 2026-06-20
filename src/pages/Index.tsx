@@ -24,7 +24,7 @@ const Index = () => {
     window.addEventListener("load", onLoad);
 
     // Page metadata + structured data
-    document.title = "Abil Biju | AI, ML & Cybersecurity Portfolio";
+    document.title = "Abil Biju | AI, ML & Cybersecurity Portfolio Website";
 
     const upsertMeta = (name: string, content: string) => {
       let element = document.querySelector(`meta[name="${name}"]`) as HTMLMetaElement | null;
