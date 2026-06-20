@@ -3,7 +3,7 @@ const experiences = [
     role: "Graduate Engineer Trainee (Artificial Intelligence)",
     company: "Transight",
     period: "May 2026 - Present",
-    description: "Contributing to the planning, development, and deployment of AI-driven solutions. Gained hands-on experience in building, testing, and optimizing AI systems while collaborating with cross-functional teams to deliver projects efficiently",
+    description: "Contributing to the design, development, and deployment of AI-powered solutions, with hands-on experience in real-world AI integrations, custom API development, LLM fine-tuning, RAG/CAG systems, AI model development, and intelligent automation. Collaborating with cross-functional teams to build, optimize, and deploy scalable AI applications for production environments.",
   },
   {
     role: "Junior Artificial Intelligence Engineer Intern",
